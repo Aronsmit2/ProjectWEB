@@ -1,0 +1,86 @@
+@font-face {
+    font-family: frutiger;
+    src: url("path/Frutiger.otf") format("opentype");
+}
+
+body {
+    background-color: #e6e6e9;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body h1,
+h2 {
+    color: #2a468e;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+    padding: .5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2a468e;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation ul {
+    margin-right: auto;
+}
+
+.navigation li {
+    width: 5em;
+}
+
+.ns_logo {
+    justify-content: flex-start;
+}
+
+.Pop_verhaal {
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: white;
+    color: black;
+    width: 20em;
+}
+
+.Pop_verhaal img {
+    width: 100%;
+}
+
+.Pop_verhaal a {
+    color: #318ad9;
+    text-decoration: none;
+}
+
+.Pop_verhaal h2,
+p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.filter button{
+    margin: 0;
+    padding: 1em;
+    border: 0;
+}
+.verhaal {
+    background-color: white;
+    padding: 2em 5em 3em 5em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
