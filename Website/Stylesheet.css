@@ -3,6 +3,7 @@
     src: url("path/Frutiger.otf") format("opentype");
 }
 
+
 body {
     background-color: #e6e6e9;
     font-family: sans-serif;
@@ -89,3 +90,31 @@ p {
     margin-right: 10em;
 }
 
+
+/* Inlog formulier */
+fieldset{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 30em){
+    .navigation{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ns_logo{
+        visibility: hidden;
+    }
+
+    .verhaal{
+        padding: .5em;
+        margin: 1em;
+    }
+}
