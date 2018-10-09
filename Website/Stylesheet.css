@@ -37,7 +37,7 @@ nav a {
     justify-content: flex-end;
 }
 
-li:first-child{
+li:first-child {
     justify-content: flex-start;
     margin-right: auto;
 }
@@ -78,11 +78,12 @@ p {
     padding-right: 1em;
 }
 
-.filter button{
+.filter button {
     margin: 0;
     padding: 1em;
     border: 0;
 }
+
 .verhaal {
     background-color: white;
     padding: 2em 5em 3em 5em;
@@ -92,29 +93,56 @@ p {
 
 
 /* Inlog formulier */
-fieldset{
+form {
     display: flex;
-    width: 50%;
+    justify-content: center;
+    width: 40%;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fdc930;
+    padding: 2em;
+}
+
+fieldset {
+    display: flex;
+    justify-content: flex-start;
+}
+
+fieldset button {
+    background-color: #0079d3;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    border: 0;
 }
 
 
-
-@media (max-width: 30em){
-    .navigation{
+@media (max-width: 30em) {
+    .navigation {
         display: flex;
         justify-content: flex-start;
         margin: 0;
         padding: 0;
     }
 
-    .ns_logo{
+    .ns_logo {
         visibility: hidden;
     }
 
-    .verhaal{
+    .verhaal {
         padding: .5em;
         margin: 1em;
     }
+
+    form {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fdc930;
+    padding: 2em;
+}
 }
