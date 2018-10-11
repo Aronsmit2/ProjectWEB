@@ -31,7 +31,7 @@ nav a {
     color: #2a468e;
 }
 
-.navigation {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -42,19 +42,11 @@ li:first-child {
     margin-right: auto;
 }
 
-.navigation ul {
-    margin-right: auto;
-}
-
-.navigation li {
+li {
     width: 5em;
 }
 
-.ns_logo {
-    justify-content: flex-start;
-}
-
-.Pop_verhaal {
+article {
     margin: auto;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -63,28 +55,28 @@ li:first-child {
     width: 20em;
 }
 
-.Pop_verhaal img {
+article img {
     width: 100%;
 }
 
-.Pop_verhaal a {
+article a {
     color: #318ad9;
     text-decoration: none;
 }
 
-.Pop_verhaal h2,
+article h2,
 p {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-.filter button {
+article:nth-child(5) button {
     margin: 0;
     padding: 1em;
     border: 0;
 }
 
-.verhaal {
+article:nth-child(6) {
     background-color: white;
     padding: 2em 5em 3em 5em;
     margin-left: 10em;
@@ -119,30 +111,30 @@ fieldset button {
 
 
 @media (max-width: 30em) {
-    .navigation {
+    nav li {
         display: flex;
         justify-content: flex-start;
         margin: 0;
         padding: 0;
     }
 
-    .ns_logo {
+    li:first-child {
         visibility: hidden;
     }
 
-    .verhaal {
+    article {
         padding: .5em;
         margin: 1em;
     }
 
     form {
-    display: flex;
-    justify-content: center;
-    width: 75%;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fdc930;
-    padding: 2em;
-}
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fdc930;
+        padding: 2em;
+    }
 }
