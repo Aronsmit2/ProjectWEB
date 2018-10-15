@@ -1,12 +1,13 @@
 @font-face {
-    font-family: frutiger;
+    font-family: 'frutiger';
     src: url("path/Frutiger.otf") format("opentype");
 }
 
 
 body {
     background-color: #e6e6e9;
-    font-family: sans-serif;
+    font-family: frutiger;
+    font-style: normal;
     margin: 0;
 }
 
@@ -20,6 +21,8 @@ header {
     background-color: white;
 }
 
+
+/* Navigatie menu */
 nav {
     width: 100%;
     background-color: white;
@@ -39,13 +42,18 @@ nav ul {
 
 li:first-child {
     justify-content: flex-start;
-    margin-right: auto;
 }
 
+li:nth-child(2) {
+    justify-content: flex-start;
+    margin-right: auto;
+}
 li {
     width: 5em;
 }
 
+
+/* Verschillende artikelen */
 article {
     margin: auto;
     margin-bottom: 1em;
