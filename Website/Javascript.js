@@ -6,7 +6,7 @@
 
 var hamburger = document.querySelector('nav li');
 
-function klapOpen() {
+function MenuOpenen() {
     var nav = document.querySelector('nav li:nth-child(2)');
     nav.style.display = 'block';
     nav = document.querySelector('nav li:nth-child(3)');
@@ -19,4 +19,4 @@ function klapOpen() {
     nav.style.display = 'block';
 }
 
-hamburger.addEventListener('click', klapOpen);
+hamburger.addEventListener('click', MenuOpenen);
