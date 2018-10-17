@@ -29,9 +29,10 @@ nav {
     padding: .5em;
 }
 
-nav img{
+nav img {
     height: 1.5em;
 }
+
 nav a {
     text-decoration: none;
     color: #2a468e;
@@ -51,12 +52,18 @@ li:nth-child(2) {
     justify-content: flex-start;
     margin-right: auto;
 }
+
 li {
     width: 5em;
 }
 
 
 /* Verschillende artikelen */
+
+main{
+    margin: auto;
+}
+
 article {
     margin: auto;
     margin-bottom: 1em;
@@ -113,7 +120,7 @@ fieldset {
     border: 0;
 }
 
-fieldset legend{
+fieldset legend {
     font-size: 1.5em;
     color: #2a468e;
 }
@@ -127,28 +134,28 @@ fieldset button {
 }
 
 
-@media (max-width: 30em) {
+/* Telefoon website */
+@media (max-width: 35em) {
 
     /* Navigation menu in hamburger */
-    nav{
+    nav {
         font-size: 1em;
     }
 
-    nav li:not(:first-child){
+    nav li:not(:first-child) {
         display: none;
-        transition: 2s;
+        margin: 1em;
     }
 
-    nav ul{
-        transition: 2s;
+    nav ul {
         display: block;
     }
 
-    nav li:first-child{
+    nav li:first-child {
         display: flex;
     }
 
-    li img:nth-child(2){
+    li img:nth-child(2) {
         height: 1.5em;
         margin-left: 1em;
     }
@@ -167,5 +174,36 @@ fieldset button {
         margin-right: auto;
         background-color: #fdc930;
         padding: 2em;
+    }
+}
+
+
+/* Tablet website */
+@media (min-width: 35em) and (max-width: 50em) {
+    li img:nth-child(2) {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+}
+
+
+/* Desktop website */
+@media (min-width: 50em) {
+    li img:nth-child(2) {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        width: 75%;
+        margin: auto;
     }
 }
