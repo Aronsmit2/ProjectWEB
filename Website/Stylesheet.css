@@ -21,7 +21,9 @@ header {
     background-color: white;
 }
 
-
+h1{
+    margin-left: 6em;
+}
 /* Navigatie menu */
 nav {
     width: 100%;
@@ -57,6 +59,9 @@ li {
     width: 5em;
 }
 
+li:last-child{
+    margin-right: 2em;
+}
 
 /* Verschillende artikelen */
 
@@ -135,7 +140,7 @@ fieldset button {
 
 
 /* Telefoon website */
-@media (max-width: 35em) {
+@media (max-width: 40em) {
 
     /* Navigation menu in hamburger */
     nav {
@@ -179,7 +184,7 @@ fieldset button {
 
 
 /* Tablet website */
-@media (min-width: 35em) and (max-width: 50em) {
+@media (min-width: 40em) and (max-width: 55em) {
     li img:nth-child(2) {
         display: none;
     }
@@ -194,7 +199,7 @@ fieldset button {
 
 
 /* Desktop website */
-@media (min-width: 50em) {
+@media (min-width: 55em) {
     li img:nth-child(2) {
         display: none;
     }
