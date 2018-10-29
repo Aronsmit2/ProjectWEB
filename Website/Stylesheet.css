@@ -24,6 +24,11 @@ header {
 h1{
     margin-left: 6em;
 }
+
+body > img{
+    width: 100%;
+}
+
 /* Navigatie menu */
 nav {
     width: 100%;
@@ -48,6 +53,7 @@ nav ul {
 
 li:first-child {
     justify-content: flex-start;
+    margin-left: 0;
 }
 
 li:nth-child(2) {
@@ -57,6 +63,7 @@ li:nth-child(2) {
 
 li {
     width: 5em;
+    margin-left: 1em;
 }
 
 li:last-child{
@@ -70,7 +77,6 @@ main{
 }
 
 article {
-    margin: auto;
     margin-bottom: 1em;
     margin-top: 1em;
     background-color: white;
@@ -78,7 +84,7 @@ article {
     width: 20em;
 }
 
-article img {
+article img:first-child {
     width: 100%;
 }
 
@@ -106,17 +112,42 @@ article:nth-child(6) {
     margin-right: 10em;
 }
 
+article > img{
+    float: right;
+    width: 1.5em;
+    margin-right: 0;
+    margin 1em;
+}
 
-/* Inlog formulier */
+/* loading cirkel */
+.loader {
+    float: right;
+    border: 10px solid #0079d3;
+    border-top: 10px solid #2a468e;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Filter/Sorteer */
 form {
-    display: flex;
-    justify-content: center;
-    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    width: 50%;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     background-color: #fdc930;
     padding: 2em;
+
 }
 
 fieldset {
@@ -134,10 +165,18 @@ fieldset button {
     background-color: #0079d3;
     color: white;
     margin: 0;
+    margin-bottom: 1em;
     padding: 1em;
     border: 0;
 }
 
+fieldset h2{
+   text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*inlog pagina*/
 
 /* Telefoon website */
 @media (max-width: 40em) {
@@ -212,3 +251,4 @@ fieldset button {
         margin: auto;
     }
 }
+

@@ -20,3 +20,38 @@ function MenuOpenen() {
 }
 
 hamburger.addEventListener('click', MenuOpenen);
+
+var btnSorteer = document.querySelector('form h2');
+
+function sorteerOpen(){
+    var formulier = document.querySelector('fieldset button');
+    formulier.style.display= 'block';
+    formulier = document.querySelector('fieldset button:nth-child(2)');
+    formulier.style.display= 'block';
+}
+
+btnSorteer.addEventListener('click', sorteerOpen);
+
+
+
+
+var download = document.getElementById('download');
+
+function verhaal_download(){
+    var download_knop = document.getElementById('download');
+    download_knop.parentNode.removeChild(download_knop);
+    document.getElementById("loader").innerHTML = "<div class = loader></div>";
+}
+
+download.addEventListener('click', verhaal_download);
+
+
+
+
+var like = document.getElementById('like');
+
+function like_verhaal(){
+    document.getElementById('like').src="/Images/like_vol.png";
+}
+
+like.addEventListener('click', like_verhaal);
