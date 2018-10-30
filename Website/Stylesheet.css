@@ -26,7 +26,10 @@ h1{
 }
 
 body > img{
-    width: 100%;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 3em;
 }
 
 /* Navigatie menu */
@@ -84,8 +87,9 @@ article {
     width: 20em;
 }
 
-article img:first-child {
+article img {
     width: 100%;
+    height: 10em;
 }
 
 article a {
@@ -105,36 +109,34 @@ article:nth-child(5) button {
     border: 0;
 }
 
-article:nth-child(6) {
-    background-color: white;
-    padding: 2em 5em 3em 5em;
-    margin-left: 10em;
-    margin-right: 10em;
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    width: 90%;
+    margin: 1em;
 }
 
-article > img{
-    float: right;
-    width: 1.5em;
-    margin-right: 0;
-    margin 1em;
+footer img{
+    height: 5.5em;
+    width: 100%;
 }
+
 
 /* loading cirkel */
 .loader {
-    float: right;
-    border: 10px solid #0079d3;
-    border-top: 10px solid #2a468e;
+    border: 20px solid #0079d3;
+    border-top: 20px solid #2a468e;
     border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    animation: spin 2s linear infinite;
+    width: 3em;
+    height: 3em;
+    animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
 
 /* Filter/Sorteer */
 form {
@@ -170,6 +172,11 @@ fieldset button {
     border: 0;
 }
 
+fieldset button:nth-child(2){
+    background-color: #fdc930;
+    color: #2a468e;
+}
+
 fieldset h2{
    text-align: center;
     margin-top: 0;
@@ -177,6 +184,27 @@ fieldset h2{
 }
 
 /*inlog pagina*/
+
+.inlog label{
+    font-size: 1.5em;
+}
+.inlog input{
+    width: 20em;
+    height: 3em;
+}
+
+.inlog footer{
+    margin-left: 0;
+}
+
+.inlog li{
+    width: 90%;
+    margin: 0;
+}
+
+section:nth-child(3){
+    display: none;
+}
 
 /* Telefoon website */
 @media (max-width: 40em) {
@@ -207,18 +235,37 @@ fieldset h2{
     article {
         padding: .5em;
         margin: 1em;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        width: 75%;
-        margin-top: 2em;
         margin-left: auto;
         margin-right: auto;
-        background-color: #fdc930;
-        padding: 2em;
     }
+
+    h1{
+        margin-left: .5em;
+    }
+
+    .inlog section{
+        display: none;
+    }
+
+    .inlog input{
+        width: 15em;
+        height: 2em;
+    }
+
+    .inlog label{
+        font-size: 1em;
+    }
+
+    section:nth-child(3){
+        display: block;
+        margin: 1em;
+    }
+
+    section ul li{
+        margin: 0;
+        width: 100%;
+    }
+
 }
 
 
@@ -232,6 +279,21 @@ fieldset h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
+    }
+
+    .inlog section{
+        display:none;
+    }
+
+    section:nth-child(3){
+        display: block;
+        margin: 1em;
+        margin-left: 5em;
+    }
+
+    section ul li{
+        margin: 0;
+        width: 100%;
     }
 
 }
