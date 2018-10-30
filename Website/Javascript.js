@@ -51,7 +51,7 @@ download.addEventListener('click', verhaal_download);
 var like = document.getElementById('like');
 
 function like_verhaal(){
-    document.getElementById('like').src="/Images/like_vol.png";
+    document.getElementById('like').src="Images/like_vol.png";
 }
 
 like.addEventListener('click', like_verhaal);
