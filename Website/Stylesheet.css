@@ -279,6 +279,7 @@ section:nth-child(3){
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
+        margin-left: 1em;
     }
 
     .inlog section{
